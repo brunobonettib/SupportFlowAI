@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/SupportFlowAI.Tests/SupportFlowAI.Tests.csproj" />
+  </Folder>
+  <Project Path="SupportFlowAI.csproj" />
+</Solution>

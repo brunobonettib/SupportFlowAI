@@ -1,0 +1,47 @@
+@SupportFlowAI_HostAddress = http://localhost:5143
+
+# Inicie com scripts\Iniciar-Api-Local.cmd para usar exclusivamente Ollama.
+# Cada mensagem válida chama o provedor selecionado no servidor.
+# No VS Code: Send Request, se a extensão REST Client já estiver instalada.
+### Entrega: esperado Entrega / Media
+POST {{SupportFlowAI_HostAddress}}/api/tickets/analyze
+Content-Type: application/json
+
+{
+  "message": "Meu pedido não chegou."
+}
+
+### Pagamento: esperado Pagamento / Alta
+POST {{SupportFlowAI_HostAddress}}/api/tickets/analyze
+Content-Type: application/json
+
+{"message":"Fui cobrado duas vezes pelo mesmo pedido."}
+
+### Cancelamento: esperado Cancelamento / Alta
+POST {{SupportFlowAI_HostAddress}}/api/tickets/analyze
+Content-Type: application/json
+
+{"message":"Preciso cancelar imediatamente antes de começarem o preparo."}
+
+### Reembolso: esperado Reembolso / Media
+POST {{SupportFlowAI_HostAddress}}/api/tickets/analyze
+Content-Type: application/json
+
+{"message":"Solicitei reembolso ontem e quero acompanhar o andamento."}
+
+### Ambígua: esperado Outro / Baixa, com pedido de esclarecimento
+POST {{SupportFlowAI_HostAddress}}/api/tickets/analyze
+Content-Type: application/json
+
+{"message":"Preciso de ajuda."}
+
+### Entrada inválida: 400, sem chamar o provedor
+POST {{SupportFlowAI_HostAddress}}/api/tickets/analyze
+Content-Type: application/json
+
+{
+  "message": ""
+}
+
+###
+GET {{SupportFlowAI_HostAddress}}/openapi/v1.json

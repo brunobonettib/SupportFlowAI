@@ -1,0 +1,458 @@
+{
+  "status": "executado",
+  "reason": null,
+  "startedAtUtc": "2026-11-02T15:53:04.5022264+00:00",
+  "completedAtUtc": "2026-11-02T15:53:25.4273387+00:00",
+  "provider": "Ollama",
+  "evaluationSet": "holdout",
+  "warmup": {
+    "success": true,
+    "errorCode": null,
+    "latencyMs": 1114.2437
+  },
+  "textPolicyVersion": "1.0",
+  "textOrigin": "formula\u00E7\u00F5es controladas pelo backend; rascunhos separados",
+  "modelConfigured": "gemma3:4b",
+  "reasoningEffort": "n\u00E3o aplic\u00E1vel; temperatura 0, seed 42",
+  "timeoutSeconds": 120,
+  "maxOutputTokens": 1000,
+  "contextTokens": 8192,
+  "promptVersion": "1.3",
+  "promptSha256": "a9ae2051aa9be295cc3ba268dc64a363ac9b9b1bd078bb113c7851657c81b7fe",
+  "schemaSha256": "2e94642710cb29f14ee696b5a2abc6a60c171b0f4a31f743e3c9be2c8e8c4ecc",
+  "datasetSha256": "e763d38861ccad2b9bfbb9c42fa76627a1d3730229d5080e5abbf781edafe850",
+  "datasetSize": 15,
+  "metrics": {
+    "attempted": 15,
+    "valid": 15,
+    "categoryCorrect": 14,
+    "priorityCorrect": 12,
+    "categoryAccuracy": 0.9333333333333333,
+    "priorityAccuracy": 0.8,
+    "validResponseRate": 1,
+    "averageLatencyMs": 1320.2585533333333,
+    "failureCount": 0,
+    "categories": {
+      "byClass": {
+        "Entrega": {
+          "support": 2,
+          "predicted": 1,
+          "truePositive": 1,
+          "falsePositive": 0,
+          "falseNegative": 1,
+          "precision": 1,
+          "recall": 0.5
+        },
+        "Pagamento": {
+          "support": 4,
+          "predicted": 4,
+          "truePositive": 4,
+          "falsePositive": 0,
+          "falseNegative": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "Cancelamento": {
+          "support": 2,
+          "predicted": 2,
+          "truePositive": 2,
+          "falsePositive": 0,
+          "falseNegative": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "Reembolso": {
+          "support": 3,
+          "predicted": 3,
+          "truePositive": 3,
+          "falsePositive": 0,
+          "falseNegative": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "Outro": {
+          "support": 4,
+          "predicted": 5,
+          "truePositive": 4,
+          "falsePositive": 1,
+          "falseNegative": 0,
+          "precision": 0.8,
+          "recall": 1
+        }
+      },
+      "confusionMatrix": {
+        "Entrega": {
+          "Entrega": 1,
+          "Pagamento": 0,
+          "Cancelamento": 0,
+          "Reembolso": 0,
+          "Outro": 1,
+          "SemResposta": 0
+        },
+        "Pagamento": {
+          "Entrega": 0,
+          "Pagamento": 4,
+          "Cancelamento": 0,
+          "Reembolso": 0,
+          "Outro": 0,
+          "SemResposta": 0
+        },
+        "Cancelamento": {
+          "Entrega": 0,
+          "Pagamento": 0,
+          "Cancelamento": 2,
+          "Reembolso": 0,
+          "Outro": 0,
+          "SemResposta": 0
+        },
+        "Reembolso": {
+          "Entrega": 0,
+          "Pagamento": 0,
+          "Cancelamento": 0,
+          "Reembolso": 3,
+          "Outro": 0,
+          "SemResposta": 0
+        },
+        "Outro": {
+          "Entrega": 0,
+          "Pagamento": 0,
+          "Cancelamento": 0,
+          "Reembolso": 0,
+          "Outro": 4,
+          "SemResposta": 0
+        }
+      }
+    },
+    "priorities": {
+      "byClass": {
+        "Baixa": {
+          "support": 5,
+          "predicted": 5,
+          "truePositive": 4,
+          "falsePositive": 1,
+          "falseNegative": 1,
+          "precision": 0.8,
+          "recall": 0.8
+        },
+        "Media": {
+          "support": 5,
+          "predicted": 3,
+          "truePositive": 3,
+          "falsePositive": 0,
+          "falseNegative": 2,
+          "precision": 1,
+          "recall": 0.6
+        },
+        "Alta": {
+          "support": 5,
+          "predicted": 7,
+          "truePositive": 5,
+          "falsePositive": 2,
+          "falseNegative": 0,
+          "precision": 0.7142857142857143,
+          "recall": 1
+        }
+      },
+      "confusionMatrix": {
+        "Baixa": {
+          "Baixa": 4,
+          "Media": 0,
+          "Alta": 1,
+          "SemResposta": 0
+        },
+        "Media": {
+          "Baixa": 1,
+          "Media": 3,
+          "Alta": 1,
+          "SemResposta": 0
+        },
+        "Alta": {
+          "Baixa": 0,
+          "Media": 0,
+          "Alta": 5,
+          "SemResposta": 0
+        }
+      }
+    },
+    "highPriorityRecall": 1
+  },
+  "cases": [
+    {
+      "id": "H01",
+      "expectedCategory": "Pagamento",
+      "expectedPriority": "Alta",
+      "analysis": {
+        "categoria": "Pagamento",
+        "prioridade": "Alta",
+        "justificativa": "Triagem preliminar em Pagamento. Alta indica poss\u00EDvel risco, preju\u00EDzo ou janela urgente; confirme os sinais na revis\u00E3o priorit\u00E1ria.",
+        "sugestaoResposta": "Sua solicita\u00E7\u00E3o precisa de an\u00E1lise priorit\u00E1ria por um atendente para confirmar os detalhes e orientar os pr\u00F3ximos passos.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1323.9878,
+      "modelDraft": {
+        "justificativa": "O cliente relata que o valor de uma compra foi debitado duas vezes em uma mesma data.",
+        "sugestaoResposta": "Verificar o hist\u00F3rico de transa\u00E7\u00F5es para confirmar a cobran\u00E7a duplicada e iniciar o processo de reembolso do valor adicional."
+      }
+    },
+    {
+      "id": "H02",
+      "expectedCategory": "Pagamento",
+      "expectedPriority": "Alta",
+      "analysis": {
+        "categoria": "Pagamento",
+        "prioridade": "Alta",
+        "justificativa": "Triagem preliminar em Pagamento. Alta indica poss\u00EDvel risco, preju\u00EDzo ou janela urgente; confirme os sinais na revis\u00E3o priorit\u00E1ria.",
+        "sugestaoResposta": "Sua solicita\u00E7\u00E3o precisa de an\u00E1lise priorit\u00E1ria por um atendente para confirmar os detalhes e orientar os pr\u00F3ximos passos.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1574.0902,
+      "modelDraft": {
+        "justificativa": "Cliente identifica compra desconhecida em extrato, suspeitando de uso n\u00E3o autorizado da conta.",
+        "sugestaoResposta": "Solicite detalhes da compra (valor, data, hora, nome do vendedor) para investigar a fundo a transa\u00E7\u00E3o. Recomende verificar seguran\u00E7a da conta e, se necess\u00E1rio, acionar o suporte de seguran\u00E7a do banco."
+      }
+    },
+    {
+      "id": "H03",
+      "expectedCategory": "Entrega",
+      "expectedPriority": "Alta",
+      "analysis": {
+        "categoria": "Entrega",
+        "prioridade": "Alta",
+        "justificativa": "Triagem preliminar em Entrega. Alta indica poss\u00EDvel risco, preju\u00EDzo ou janela urgente; confirme os sinais na revis\u00E3o priorit\u00E1ria.",
+        "sugestaoResposta": "Sua solicita\u00E7\u00E3o precisa de an\u00E1lise priorit\u00E1ria por um atendente para confirmar os detalhes e orientar os pr\u00F3ximos passos.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1181.1413,
+      "modelDraft": {
+        "justificativa": "O cliente relata que o hor\u00E1rio de entrega passou e a refei\u00E7\u00E3o n\u00E3o chegou.",
+        "sugestaoResposta": "Verificar o status da entrega e informar o novo prazo estimado ao cliente."
+      }
+    },
+    {
+      "id": "H04",
+      "expectedCategory": "Cancelamento",
+      "expectedPriority": "Alta",
+      "analysis": {
+        "categoria": "Cancelamento",
+        "prioridade": "Alta",
+        "justificativa": "Triagem preliminar em Cancelamento. Alta indica poss\u00EDvel risco, preju\u00EDzo ou janela urgente; confirme os sinais na revis\u00E3o priorit\u00E1ria.",
+        "sugestaoResposta": "Sua solicita\u00E7\u00E3o precisa de an\u00E1lise priorit\u00E1ria por um atendente para confirmar os detalhes e orientar os pr\u00F3ximos passos.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1265.4808,
+      "modelDraft": {
+        "justificativa": "Cliente deseja cancelar a compra imediatamente, antes do preparo iniciar.",
+        "sugestaoResposta": "Entendido. Para prosseguir com o cancelamento, por favor, confirme se deseja que a compra seja interrompida."
+      }
+    },
+    {
+      "id": "H05",
+      "expectedCategory": "Outro",
+      "expectedPriority": "Alta",
+      "analysis": {
+        "categoria": "Outro",
+        "prioridade": "Alta",
+        "justificativa": "Triagem preliminar em Outro. Alta indica poss\u00EDvel risco, preju\u00EDzo ou janela urgente; confirme os sinais na revis\u00E3o priorit\u00E1ria.",
+        "sugestaoResposta": "Sua solicita\u00E7\u00E3o precisa de an\u00E1lise priorit\u00E1ria por um atendente para confirmar os detalhes e orientar os pr\u00F3ximos passos.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1317.4454,
+      "modelDraft": {
+        "justificativa": "Cliente relata encontrar fragmento de metal na refei\u00E7\u00E3o e corte na gengiva.",
+        "sugestaoResposta": "Entendemos a gravidade da situa\u00E7\u00E3o. Sugerimos que o cliente procure atendimento m\u00E9dico imediatamente para avalia\u00E7\u00E3o e tratamento adequados."
+      }
+    },
+    {
+      "id": "H06",
+      "expectedCategory": "Pagamento",
+      "expectedPriority": "Media",
+      "analysis": {
+        "categoria": "Pagamento",
+        "prioridade": "Media",
+        "justificativa": "Triagem preliminar em Pagamento. Media indica poss\u00EDvel problema ativo; confirme a aus\u00EAncia de sinais de urg\u00EAncia na revis\u00E3o.",
+        "sugestaoResposta": "Para orientar sobre pagamento, um atendente precisa conferir sua d\u00FAvida ou o problema relatado. N\u00E3o envie senha ou dados completos do cart\u00E3o.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1442.9262,
+      "modelDraft": {
+        "justificativa": "O cliente relata erro no aplicativo durante a tentativa de pagamento, impedindo a finaliza\u00E7\u00E3o da compra.",
+        "sugestaoResposta": "Por favor, verifique sua conex\u00E3o com a internet e tente novamente. Se o problema persistir, informe a mensagem de erro exata que aparece no aplicativo."
+      }
+    },
+    {
+      "id": "H07",
+      "expectedCategory": "Reembolso",
+      "expectedPriority": "Media",
+      "analysis": {
+        "categoria": "Reembolso",
+        "prioridade": "Media",
+        "justificativa": "Triagem preliminar em Reembolso. Media indica poss\u00EDvel problema ativo; confirme a aus\u00EAncia de sinais de urg\u00EAncia na revis\u00E3o.",
+        "sugestaoResposta": "Um atendente precisa esclarecer sua d\u00FAvida ou avaliar a solicita\u00E7\u00E3o de reembolso. N\u00E3o h\u00E1 confirma\u00E7\u00E3o de aprova\u00E7\u00E3o, estorno ou prazo nesta mensagem.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1305.4268,
+      "modelDraft": {
+        "justificativa": "O cliente solicitou reembolso e o prazo de conclus\u00E3o n\u00E3o expirou, indicando um problema pendente.",
+        "sugestaoResposta": "Verificar o status da solicita\u00E7\u00E3o de reembolso e informar o cliente sobre o andamento."
+      }
+    },
+    {
+      "id": "H08",
+      "expectedCategory": "Reembolso",
+      "expectedPriority": "Media",
+      "analysis": {
+        "categoria": "Reembolso",
+        "prioridade": "Alta",
+        "justificativa": "Triagem preliminar em Reembolso. Alta indica poss\u00EDvel risco, preju\u00EDzo ou janela urgente; confirme os sinais na revis\u00E3o priorit\u00E1ria.",
+        "sugestaoResposta": "Sua solicita\u00E7\u00E3o precisa de an\u00E1lise priorit\u00E1ria por um atendente para confirmar os detalhes e orientar os pr\u00F3ximos passos.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1400.4048,
+      "modelDraft": {
+        "justificativa": "Cliente recebeu um prato diferente do pedido e opta por reembolso em vez de nova entrega.",
+        "sugestaoResposta": "Entendemos a sua insatisfa\u00E7\u00E3o. Processaremos o seu pedido de reembolso imediatamente. Por favor, aguarde a confirma\u00E7\u00E3o do estorno."
+      }
+    },
+    {
+      "id": "H09",
+      "expectedCategory": "Outro",
+      "expectedPriority": "Media",
+      "analysis": {
+        "categoria": "Outro",
+        "prioridade": "Baixa",
+        "justificativa": "Triagem preliminar em Outro. Baixa indica poss\u00EDvel d\u00FAvida geral ou falta de contexto; confirme se existe um problema ativo.",
+        "sugestaoResposta": "Pode explicar qual orienta\u00E7\u00E3o voc\u00EA procura e se h\u00E1 algum problema acontecendo? Um atendente precisa desses detalhes para avaliar a solicita\u00E7\u00E3o.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1382.5035,
+      "modelDraft": {
+        "justificativa": "Usu\u00E1rio relata problema ao tentar alterar o telefone no cadastro, bot\u00E3o de salvar n\u00E3o funciona.",
+        "sugestaoResposta": "Por favor, tente novamente em alguns minutos. Se o problema persistir, informe o tipo de dispositivo e sistema operacional que est\u00E1 utilizando."
+      }
+    },
+    {
+      "id": "H10",
+      "expectedCategory": "Cancelamento",
+      "expectedPriority": "Media",
+      "analysis": {
+        "categoria": "Cancelamento",
+        "prioridade": "Media",
+        "justificativa": "Triagem preliminar em Cancelamento. Media indica poss\u00EDvel problema ativo; confirme a aus\u00EAncia de sinais de urg\u00EAncia na revis\u00E3o.",
+        "sugestaoResposta": "Um atendente precisa esclarecer sua d\u00FAvida ou avaliar a possibilidade de cancelamento. Esta mensagem n\u00E3o confirma que o pedido foi cancelado.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1290.8374,
+      "modelDraft": {
+        "justificativa": "Cliente solicita o cancelamento de uma compra realizada por engano, sem indicar urg\u00EAncia.",
+        "sugestaoResposta": "Entendemos o ocorrido. Para prosseguirmos com o cancelamento, por favor, informe o n\u00FAmero do pedido."
+      }
+    },
+    {
+      "id": "H11",
+      "expectedCategory": "Reembolso",
+      "expectedPriority": "Baixa",
+      "analysis": {
+        "categoria": "Reembolso",
+        "prioridade": "Baixa",
+        "justificativa": "Triagem preliminar em Reembolso. Baixa indica poss\u00EDvel d\u00FAvida geral ou falta de contexto; confirme se existe um problema ativo.",
+        "sugestaoResposta": "Um atendente precisa esclarecer sua d\u00FAvida ou avaliar a solicita\u00E7\u00E3o de reembolso. N\u00E3o h\u00E1 confirma\u00E7\u00E3o de aprova\u00E7\u00E3o, estorno ou prazo nesta mensagem.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1425.2055,
+      "modelDraft": {
+        "justificativa": "Cliente busca informa\u00E7\u00F5es sobre a pol\u00EDtica de devolu\u00E7\u00E3o de dinheiro antes de efetuar uma compra.",
+        "sugestaoResposta": "Para entender como solicitar a devolu\u00E7\u00E3o de dinheiro, consulte a se\u00E7\u00E3o de perguntas frequentes em nosso site ou entre em contato com nosso suporte para obter mais detalhes."
+      }
+    },
+    {
+      "id": "H12",
+      "expectedCategory": "Pagamento",
+      "expectedPriority": "Baixa",
+      "analysis": {
+        "categoria": "Pagamento",
+        "prioridade": "Baixa",
+        "justificativa": "Triagem preliminar em Pagamento. Baixa indica poss\u00EDvel d\u00FAvida geral ou falta de contexto; confirme se existe um problema ativo.",
+        "sugestaoResposta": "Para orientar sobre pagamento, um atendente precisa conferir sua d\u00FAvida ou o problema relatado. N\u00E3o envie senha ou dados completos do cart\u00E3o.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1270.8284,
+      "modelDraft": {
+        "justificativa": "Cliente questiona sobre identifica\u00E7\u00E3o de fraudes, sem reportar tentativas espec\u00EDficas.",
+        "sugestaoResposta": "Entendemos sua preocupa\u00E7\u00E3o. Recomendamos verificar os \u00FAltimos lan\u00E7amentos em sua conta e, se necess\u00E1rio, entrar em contato com o suporte para auxiliar na an\u00E1lise."
+      }
+    },
+    {
+      "id": "H13",
+      "expectedCategory": "Outro",
+      "expectedPriority": "Baixa",
+      "analysis": {
+        "categoria": "Outro",
+        "prioridade": "Baixa",
+        "justificativa": "Triagem preliminar em Outro. Baixa indica poss\u00EDvel d\u00FAvida geral ou falta de contexto; confirme se existe um problema ativo.",
+        "sugestaoResposta": "Pode explicar qual orienta\u00E7\u00E3o voc\u00EA procura e se h\u00E1 algum problema acontecendo? Um atendente precisa desses detalhes para avaliar a solicita\u00E7\u00E3o.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1104.1463,
+      "modelDraft": {
+        "justificativa": "Relato gen\u00E9rico solicitando orienta\u00E7\u00E3o, sem detalhes sobre o problema.",
+        "sugestaoResposta": "Para melhor direcionar sua solicita\u00E7\u00E3o, por favor, especifique qual tipo de orienta\u00E7\u00E3o voc\u00EA precisa."
+      }
+    },
+    {
+      "id": "H14",
+      "expectedCategory": "Outro",
+      "expectedPriority": "Baixa",
+      "analysis": {
+        "categoria": "Outro",
+        "prioridade": "Alta",
+        "justificativa": "Triagem preliminar em Outro. Alta indica poss\u00EDvel risco, preju\u00EDzo ou janela urgente; confirme os sinais na revis\u00E3o priorit\u00E1ria.",
+        "sugestaoResposta": "Sua solicita\u00E7\u00E3o precisa de an\u00E1lise priorit\u00E1ria por um atendente para confirmar os detalhes e orientar os pr\u00F3ximos passos.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1180.9136,
+      "modelDraft": {
+        "justificativa": "Cliente expressa gratid\u00E3o pela simpatia da equipe, indicando satisfa\u00E7\u00E3o.",
+        "sugestaoResposta": "Agradecemos o seu feedback positivo e a gentileza demonstrada por nossa equipe. Valorizamos muito a sua experi\u00EAncia!"
+      }
+    },
+    {
+      "id": "H15",
+      "expectedCategory": "Entrega",
+      "expectedPriority": "Baixa",
+      "analysis": {
+        "categoria": "Outro",
+        "prioridade": "Baixa",
+        "justificativa": "Triagem preliminar em Outro. Baixa indica poss\u00EDvel d\u00FAvida geral ou falta de contexto; confirme se existe um problema ativo.",
+        "sugestaoResposta": "Pode explicar qual orienta\u00E7\u00E3o voc\u00EA procura e se h\u00E1 algum problema acontecendo? Um atendente precisa desses detalhes para avaliar a solicita\u00E7\u00E3o.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1338.5403,
+      "modelDraft": {
+        "justificativa": "Cliente busca informa\u00E7\u00F5es sobre rastreamento, mas n\u00E3o realizou compra.",
+        "sugestaoResposta": "Para acompanhar o status de seus pedidos, acesse a se\u00E7\u00E3o \u0027Meus Pedidos\u0027 no aplicativo ou site ap\u00F3s finalizar a compra."
+      }
+    }
+  ],
+  "limitations": [
+    "15 exemplos sint\u00E9ticos preparados com apoio do Codex; n\u00E3o representam tr\u00E1fego real nem rotulagem independente.",
+    "Lat\u00EAncia mede o servi\u00E7o de an\u00E1lise (rede, provedor e valida\u00E7\u00E3o); n\u00E3o mede o endpoint HTTP nem trabalho humano.",
+    "Falhas contam no denominador das acur\u00E1cias. Validade estrutural n\u00E3o garante corre\u00E7\u00E3o sem\u00E2ntica.",
+    "Sugest\u00F5es precisam de revis\u00E3o humana. Economia de tempo, custo real e impacto operacional n\u00E3o foram medidos.",
+    "Modelo configurado pode ser um alias mut\u00E1vel; resultados podem variar entre execu\u00E7\u00F5es."
+  ]
+}

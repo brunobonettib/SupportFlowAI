@@ -1,0 +1,1 @@
+{"type":"https://tools.ietf.org/html/rfc9110#section-15.6.4","title":"Não foi possível analisar a mensagem.","status":503,"detail":"Inicie o Ollama local em 127.0.0.1:11434.","code":"local_provider_unavailable","traceId":"00-7bfe09766e160292bed3445098f5533b-e532c573a4a21950-00"}

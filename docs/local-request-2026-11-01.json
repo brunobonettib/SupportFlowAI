@@ -1,0 +1,15 @@
+﻿{
+    "executedAtUtc":  "2026-11-01T23:28:19.8674540+00:00",
+    "provider":  "Ollama local",
+    "model":  "gemma3:1b",
+    "message":  "Meu pedido não chegou.",
+    "httpStatus":  200,
+    "latencyMs":  96244.98980000001,
+    "response":  {
+                     "categoria":  "Entrega",
+                     "prioridade":  "Media",
+                     "justificativa":  "O pedido não foi recebido, indicando um problema de entrega. É necessário verificar o status do pedido e rastreamento.",
+                     "sugestaoResposta":  "Verifique o status do pedido e entre em contato com a transportadora para saber o que aconteceu.",
+                     "requerRevisaoHumana":  true
+                 }
+}

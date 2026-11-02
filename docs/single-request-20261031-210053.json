@@ -1,0 +1,21 @@
+﻿{
+    "startedAtUtc":  "2026-10-31T21:00:51.4382763+00:00",
+    "endpoint":  "http://localhost:5143/api/tickets/analyze",
+    "message":  "Meu pedido não chegou.",
+    "authorizedAttempts":  1,
+    "attempts":  1,
+    "expectedCategory":  "Entrega",
+    "expectedPriority":  "Media",
+    "httpStatus":  503,
+    "elapsedMs":  2100.37,
+    "response":  {
+                     "status":  503,
+                     "code":  "provider_rate_limited",
+                     "title":  "Não foi possível analisar a mensagem.",
+                     "detail":  "O provedor atingiu um limite de uso ou de créditos. Tente mais tarde.",
+                     "traceId":  "00-87dece03de6f7641f36087c5ad81cce9-dc888b9bb726b6b4-00"
+                 },
+    "transportError":  null,
+    "providerTokenUsage":  null,
+    "actualCost":  null
+}

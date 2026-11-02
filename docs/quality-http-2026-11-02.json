@@ -1,0 +1,16 @@
+﻿{
+    "executedAtUtc":  "2026-11-02T15:56:34.0014999+00:00",
+    "model":  "gemma3:4b",
+    "promptVersion":  "1.3",
+    "textPolicyVersion":  "1.0",
+    "status":  200,
+    "latencyMs":  1534.8682000000001,
+    "message":  "Meu pedido não chegou.",
+    "response":  {
+                     "categoria":  "Entrega",
+                     "prioridade":  "Media",
+                     "justificativa":  "Triagem preliminar em Entrega. Media indica possível problema ativo; confirme a ausência de sinais de urgência na revisão.",
+                     "sugestaoResposta":  "Para orientar sobre a entrega, um atendente precisa esclarecer sua dúvida ou conferir os detalhes disponíveis. Não há confirmação de status nesta sugestão.",
+                     "requerRevisaoHumana":  true
+                 }
+}

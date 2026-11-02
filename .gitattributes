@@ -1,0 +1,9 @@
+* text=auto
+*.md text eol=lf
+*.cmd text eol=crlf
+
+# Preserve bytes used by frozen dataset, evidence and prompt hashes.
+/evaluation/*.json -text
+/evaluation/baselines/*.txt -text
+/docs/*.json -text
+/OpenAI/TicketPrompt.cs -text

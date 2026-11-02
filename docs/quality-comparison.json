@@ -1,0 +1,1077 @@
+﻿{
+    "generatedAtUtc":  "2026-11-02T15:54:54.2979497+00:00",
+    "reviewer":  "Revisão contextual assistida pelo Codex; não independente",
+    "reports":  [
+                    {
+                        "name":  "baseline-original-1b-v1.1",
+                        "source":  "avaliacao-local-2026-11-01.json",
+                        "sourceSha256":  "43e6bb2614ccb9b1f389fb3d3580b40396857f1b98b6b1308915df568e6a8121",
+                        "model":  "gemma3:1b",
+                        "prompt":  "1.1",
+                        "datasetSha256":  "3e7ea281f89ac8a8c69956d8e521fe70fd49261dba08ed77a2c086fa2d329414",
+                        "attempted":  15,
+                        "valid":  15,
+                        "categoryCorrect":  12,
+                        "priorityCorrect":  6,
+                        "categoryAccuracy":  0.8,
+                        "priorityAccuracy":  0.4,
+                        "validResponseRate":  1,
+                        "averageLatencyMs":  938.33113333333336,
+                        "highRecall":  0.2,
+                        "highUnderestimated":  4,
+                        "falseHigh":  0,
+                        "underestimated":  5,
+                        "overestimated":  4,
+                        "categories":  {
+                                           "byClass":  {
+                                                           "Entrega":  {
+                                                                           "support":  3,
+                                                                           "predicted":  4,
+                                                                           "truePositive":  3,
+                                                                           "precision":  0.75,
+                                                                           "recall":  1
+                                                                       },
+                                                           "Pagamento":  {
+                                                                             "support":  3,
+                                                                             "predicted":  3,
+                                                                             "truePositive":  3,
+                                                                             "precision":  1,
+                                                                             "recall":  1
+                                                                         },
+                                                           "Cancelamento":  {
+                                                                                "support":  3,
+                                                                                "predicted":  3,
+                                                                                "truePositive":  3,
+                                                                                "precision":  1,
+                                                                                "recall":  1
+                                                                            },
+                                                           "Reembolso":  {
+                                                                             "support":  3,
+                                                                             "predicted":  1,
+                                                                             "truePositive":  1,
+                                                                             "precision":  1,
+                                                                             "recall":  0.33333333333333331
+                                                                         },
+                                                           "Outro":  {
+                                                                         "support":  3,
+                                                                         "predicted":  4,
+                                                                         "truePositive":  2,
+                                                                         "precision":  0.5,
+                                                                         "recall":  0.66666666666666663
+                                                                     }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Entrega":  {
+                                                                                   "Entrega":  3,
+                                                                                   "Pagamento":  0,
+                                                                                   "Cancelamento":  0,
+                                                                                   "Reembolso":  0,
+                                                                                   "Outro":  0,
+                                                                                   "SemResposta":  0
+                                                                               },
+                                                                   "Pagamento":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  3,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  0,
+                                                                                     "Outro":  0,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Cancelamento":  {
+                                                                                        "Entrega":  0,
+                                                                                        "Pagamento":  0,
+                                                                                        "Cancelamento":  3,
+                                                                                        "Reembolso":  0,
+                                                                                        "Outro":  0,
+                                                                                        "SemResposta":  0
+                                                                                    },
+                                                                   "Reembolso":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  0,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  1,
+                                                                                     "Outro":  2,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Outro":  {
+                                                                                 "Entrega":  1,
+                                                                                 "Pagamento":  0,
+                                                                                 "Cancelamento":  0,
+                                                                                 "Reembolso":  0,
+                                                                                 "Outro":  2,
+                                                                                 "SemResposta":  0
+                                                                             }
+                                                               }
+                                       },
+                        "priorities":  {
+                                           "byClass":  {
+                                                           "Baixa":  {
+                                                                         "support":  5,
+                                                                         "predicted":  2,
+                                                                         "truePositive":  1,
+                                                                         "precision":  0.5,
+                                                                         "recall":  0.2
+                                                                     },
+                                                           "Media":  {
+                                                                         "support":  5,
+                                                                         "predicted":  12,
+                                                                         "truePositive":  4,
+                                                                         "precision":  0.33333333333333331,
+                                                                         "recall":  0.8
+                                                                     },
+                                                           "Alta":  {
+                                                                        "support":  5,
+                                                                        "predicted":  1,
+                                                                        "truePositive":  1,
+                                                                        "precision":  1,
+                                                                        "recall":  0.2
+                                                                    }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Baixa":  {
+                                                                                 "Baixa":  1,
+                                                                                 "Media":  4,
+                                                                                 "Alta":  0,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Media":  {
+                                                                                 "Baixa":  1,
+                                                                                 "Media":  4,
+                                                                                 "Alta":  0,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Alta":  {
+                                                                                "Baixa":  0,
+                                                                                "Media":  4,
+                                                                                "Alta":  1,
+                                                                                "SemResposta":  0
+                                                                            }
+                                                               }
+                                       },
+                        "textReviewed":  15,
+                        "unavailableText":  0,
+                        "unsupportedDrafts":  9,
+                        "unsupportedDelivered":  9,
+                        "controlledText":  false,
+                        "reviewNotes":  "Detalhes por caso em DIAGNOSTICO_QUALIDADE_IA.md; R02 inclui compromisso de garantir reembolso sem autoridade."
+                    },
+                    {
+                        "name":  "candidate-original-1b-v1.2",
+                        "source":  "quality-original-v1.2.json",
+                        "sourceSha256":  "a5842c10eaf9ab83c1249edbdab55f200979be99b27c52e2c205c0e36a1beac6",
+                        "model":  "gemma3:1b",
+                        "prompt":  "1.2",
+                        "datasetSha256":  "3e7ea281f89ac8a8c69956d8e521fe70fd49261dba08ed77a2c086fa2d329414",
+                        "attempted":  15,
+                        "valid":  15,
+                        "categoryCorrect":  11,
+                        "priorityCorrect":  9,
+                        "categoryAccuracy":  0.73333333333333328,
+                        "priorityAccuracy":  0.6,
+                        "validResponseRate":  1,
+                        "averageLatencyMs":  889.16167999999993,
+                        "highRecall":  0.8,
+                        "highUnderestimated":  1,
+                        "falseHigh":  1,
+                        "underestimated":  1,
+                        "overestimated":  5,
+                        "categories":  {
+                                           "byClass":  {
+                                                           "Entrega":  {
+                                                                           "support":  3,
+                                                                           "predicted":  3,
+                                                                           "truePositive":  3,
+                                                                           "precision":  1,
+                                                                           "recall":  1
+                                                                       },
+                                                           "Pagamento":  {
+                                                                             "support":  3,
+                                                                             "predicted":  6,
+                                                                             "truePositive":  3,
+                                                                             "precision":  0.5,
+                                                                             "recall":  1
+                                                                         },
+                                                           "Cancelamento":  {
+                                                                                "support":  3,
+                                                                                "predicted":  2,
+                                                                                "truePositive":  2,
+                                                                                "precision":  1,
+                                                                                "recall":  0.66666666666666663
+                                                                            },
+                                                           "Reembolso":  {
+                                                                             "support":  3,
+                                                                             "predicted":  0,
+                                                                             "truePositive":  0,
+                                                                             "precision":  null,
+                                                                             "recall":  0
+                                                                         },
+                                                           "Outro":  {
+                                                                         "support":  3,
+                                                                         "predicted":  4,
+                                                                         "truePositive":  3,
+                                                                         "precision":  0.75,
+                                                                         "recall":  1
+                                                                     }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Entrega":  {
+                                                                                   "Entrega":  3,
+                                                                                   "Pagamento":  0,
+                                                                                   "Cancelamento":  0,
+                                                                                   "Reembolso":  0,
+                                                                                   "Outro":  0,
+                                                                                   "SemResposta":  0
+                                                                               },
+                                                                   "Pagamento":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  3,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  0,
+                                                                                     "Outro":  0,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Cancelamento":  {
+                                                                                        "Entrega":  0,
+                                                                                        "Pagamento":  0,
+                                                                                        "Cancelamento":  2,
+                                                                                        "Reembolso":  0,
+                                                                                        "Outro":  1,
+                                                                                        "SemResposta":  0
+                                                                                    },
+                                                                   "Reembolso":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  3,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  0,
+                                                                                     "Outro":  0,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Outro":  {
+                                                                                 "Entrega":  0,
+                                                                                 "Pagamento":  0,
+                                                                                 "Cancelamento":  0,
+                                                                                 "Reembolso":  0,
+                                                                                 "Outro":  3,
+                                                                                 "SemResposta":  0
+                                                                             }
+                                                               }
+                                       },
+                        "priorities":  {
+                                           "byClass":  {
+                                                           "Baixa":  {
+                                                                         "support":  5,
+                                                                         "predicted":  0,
+                                                                         "truePositive":  0,
+                                                                         "precision":  null,
+                                                                         "recall":  0
+                                                                     },
+                                                           "Media":  {
+                                                                         "support":  5,
+                                                                         "predicted":  10,
+                                                                         "truePositive":  5,
+                                                                         "precision":  0.5,
+                                                                         "recall":  1
+                                                                     },
+                                                           "Alta":  {
+                                                                        "support":  5,
+                                                                        "predicted":  5,
+                                                                        "truePositive":  4,
+                                                                        "precision":  0.8,
+                                                                        "recall":  0.8
+                                                                    }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Baixa":  {
+                                                                                 "Baixa":  0,
+                                                                                 "Media":  4,
+                                                                                 "Alta":  1,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Media":  {
+                                                                                 "Baixa":  0,
+                                                                                 "Media":  5,
+                                                                                 "Alta":  0,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Alta":  {
+                                                                                "Baixa":  0,
+                                                                                "Media":  1,
+                                                                                "Alta":  4,
+                                                                                "SemResposta":  0
+                                                                            }
+                                                               }
+                                       },
+                        "textReviewed":  15,
+                        "unavailableText":  0,
+                        "unsupportedDrafts":  5,
+                        "unsupportedDelivered":  0,
+                        "controlledText":  true,
+                        "reviewNotes":  "E03: capacidade de consultar; P03: meios aceitos; C01/C03: cancelamento em andamento ou prometido; R03: prazo inventado. Candidato rejeitado por regressão de categoria."
+                    },
+                    {
+                        "name":  "candidate-original-1b-v1.3",
+                        "source":  "quality-original-v1.3.json",
+                        "sourceSha256":  "ffdb880c5ad7092b76179a330d56905e3f80658a42eb56c8bbc51ad2bfa67766",
+                        "model":  "gemma3:1b",
+                        "prompt":  "1.3",
+                        "datasetSha256":  "3e7ea281f89ac8a8c69956d8e521fe70fd49261dba08ed77a2c086fa2d329414",
+                        "attempted":  15,
+                        "valid":  15,
+                        "categoryCorrect":  14,
+                        "priorityCorrect":  9,
+                        "categoryAccuracy":  0.93333333333333335,
+                        "priorityAccuracy":  0.6,
+                        "validResponseRate":  1,
+                        "averageLatencyMs":  663.79148,
+                        "highRecall":  0.8,
+                        "highUnderestimated":  1,
+                        "falseHigh":  2,
+                        "underestimated":  1,
+                        "overestimated":  5,
+                        "categories":  {
+                                           "byClass":  {
+                                                           "Entrega":  {
+                                                                           "support":  3,
+                                                                           "predicted":  3,
+                                                                           "truePositive":  3,
+                                                                           "precision":  1,
+                                                                           "recall":  1
+                                                                       },
+                                                           "Pagamento":  {
+                                                                             "support":  3,
+                                                                             "predicted":  4,
+                                                                             "truePositive":  3,
+                                                                             "precision":  0.75,
+                                                                             "recall":  1
+                                                                         },
+                                                           "Cancelamento":  {
+                                                                                "support":  3,
+                                                                                "predicted":  3,
+                                                                                "truePositive":  3,
+                                                                                "precision":  1,
+                                                                                "recall":  1
+                                                                            },
+                                                           "Reembolso":  {
+                                                                             "support":  3,
+                                                                             "predicted":  3,
+                                                                             "truePositive":  3,
+                                                                             "precision":  1,
+                                                                             "recall":  1
+                                                                         },
+                                                           "Outro":  {
+                                                                         "support":  3,
+                                                                         "predicted":  2,
+                                                                         "truePositive":  2,
+                                                                         "precision":  1,
+                                                                         "recall":  0.66666666666666663
+                                                                     }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Entrega":  {
+                                                                                   "Entrega":  3,
+                                                                                   "Pagamento":  0,
+                                                                                   "Cancelamento":  0,
+                                                                                   "Reembolso":  0,
+                                                                                   "Outro":  0,
+                                                                                   "SemResposta":  0
+                                                                               },
+                                                                   "Pagamento":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  3,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  0,
+                                                                                     "Outro":  0,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Cancelamento":  {
+                                                                                        "Entrega":  0,
+                                                                                        "Pagamento":  0,
+                                                                                        "Cancelamento":  3,
+                                                                                        "Reembolso":  0,
+                                                                                        "Outro":  0,
+                                                                                        "SemResposta":  0
+                                                                                    },
+                                                                   "Reembolso":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  0,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  3,
+                                                                                     "Outro":  0,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Outro":  {
+                                                                                 "Entrega":  0,
+                                                                                 "Pagamento":  1,
+                                                                                 "Cancelamento":  0,
+                                                                                 "Reembolso":  0,
+                                                                                 "Outro":  2,
+                                                                                 "SemResposta":  0
+                                                                             }
+                                                               }
+                                       },
+                        "priorities":  {
+                                           "byClass":  {
+                                                           "Baixa":  {
+                                                                         "support":  5,
+                                                                         "predicted":  1,
+                                                                         "truePositive":  1,
+                                                                         "precision":  1,
+                                                                         "recall":  0.2
+                                                                     },
+                                                           "Media":  {
+                                                                         "support":  5,
+                                                                         "predicted":  8,
+                                                                         "truePositive":  4,
+                                                                         "precision":  0.5,
+                                                                         "recall":  0.8
+                                                                     },
+                                                           "Alta":  {
+                                                                        "support":  5,
+                                                                        "predicted":  6,
+                                                                        "truePositive":  4,
+                                                                        "precision":  0.66666666666666663,
+                                                                        "recall":  0.8
+                                                                    }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Baixa":  {
+                                                                                 "Baixa":  1,
+                                                                                 "Media":  3,
+                                                                                 "Alta":  1,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Media":  {
+                                                                                 "Baixa":  0,
+                                                                                 "Media":  4,
+                                                                                 "Alta":  1,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Alta":  {
+                                                                                "Baixa":  0,
+                                                                                "Media":  1,
+                                                                                "Alta":  4,
+                                                                                "SemResposta":  0
+                                                                            }
+                                                               }
+                                       },
+                        "textReviewed":  15,
+                        "unavailableText":  0,
+                        "unsupportedDrafts":  8,
+                        "unsupportedDelivered":  0,
+                        "controlledText":  true,
+                        "reviewNotes":  "E01: infraestrutura presumida; E03: capacidade de consulta; P03: meios aceitos; C01/C03: cancelamento; R01: contato futuro da equipe; R03: prazo 5-15 dias; O03: inventa resolução rápida de problema. Outros rótulos incorretos não entram automaticamente nesta contagem."
+                    },
+                    {
+                        "name":  "candidate-holdout-1b-v1.3",
+                        "source":  "quality-holdout-v1.3.json",
+                        "sourceSha256":  "4a74f5df8f7c001b7c1a0ecd42e28393ae7b42310568b721d47e8f289f50554a",
+                        "model":  "gemma3:1b",
+                        "prompt":  "1.3",
+                        "datasetSha256":  "e763d38861ccad2b9bfbb9c42fa76627a1d3730229d5080e5abbf781edafe850",
+                        "attempted":  15,
+                        "valid":  14,
+                        "categoryCorrect":  7,
+                        "priorityCorrect":  6,
+                        "categoryAccuracy":  0.46666666666666667,
+                        "priorityAccuracy":  0.4,
+                        "validResponseRate":  0.93333333333333335,
+                        "averageLatencyMs":  1024.6592333333333,
+                        "highRecall":  0.6,
+                        "highUnderestimated":  2,
+                        "falseHigh":  2,
+                        "underestimated":  4,
+                        "overestimated":  4,
+                        "categories":  {
+                                           "byClass":  {
+                                                           "Entrega":  {
+                                                                           "support":  2,
+                                                                           "predicted":  1,
+                                                                           "truePositive":  1,
+                                                                           "precision":  1,
+                                                                           "recall":  0.5
+                                                                       },
+                                                           "Pagamento":  {
+                                                                             "support":  4,
+                                                                             "predicted":  3,
+                                                                             "truePositive":  2,
+                                                                             "precision":  0.66666666666666663,
+                                                                             "recall":  0.5
+                                                                         },
+                                                           "Cancelamento":  {
+                                                                                "support":  2,
+                                                                                "predicted":  0,
+                                                                                "truePositive":  0,
+                                                                                "precision":  null,
+                                                                                "recall":  0
+                                                                            },
+                                                           "Reembolso":  {
+                                                                             "support":  3,
+                                                                             "predicted":  2,
+                                                                             "truePositive":  2,
+                                                                             "precision":  1,
+                                                                             "recall":  0.66666666666666663
+                                                                         },
+                                                           "Outro":  {
+                                                                         "support":  4,
+                                                                         "predicted":  8,
+                                                                         "truePositive":  2,
+                                                                         "precision":  0.25,
+                                                                         "recall":  0.5
+                                                                     }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Entrega":  {
+                                                                                   "Entrega":  1,
+                                                                                   "Pagamento":  0,
+                                                                                   "Cancelamento":  0,
+                                                                                   "Reembolso":  0,
+                                                                                   "Outro":  1,
+                                                                                   "SemResposta":  0
+                                                                               },
+                                                                   "Pagamento":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  2,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  0,
+                                                                                     "Outro":  2,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Cancelamento":  {
+                                                                                        "Entrega":  0,
+                                                                                        "Pagamento":  0,
+                                                                                        "Cancelamento":  0,
+                                                                                        "Reembolso":  0,
+                                                                                        "Outro":  2,
+                                                                                        "SemResposta":  0
+                                                                                    },
+                                                                   "Reembolso":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  0,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  2,
+                                                                                     "Outro":  1,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Outro":  {
+                                                                                 "Entrega":  0,
+                                                                                 "Pagamento":  1,
+                                                                                 "Cancelamento":  0,
+                                                                                 "Reembolso":  0,
+                                                                                 "Outro":  2,
+                                                                                 "SemResposta":  1
+                                                                             }
+                                                               }
+                                       },
+                        "priorities":  {
+                                           "byClass":  {
+                                                           "Baixa":  {
+                                                                         "support":  5,
+                                                                         "predicted":  4,
+                                                                         "truePositive":  2,
+                                                                         "precision":  0.5,
+                                                                         "recall":  0.4
+                                                                     },
+                                                           "Media":  {
+                                                                         "support":  5,
+                                                                         "predicted":  5,
+                                                                         "truePositive":  1,
+                                                                         "precision":  0.2,
+                                                                         "recall":  0.2
+                                                                     },
+                                                           "Alta":  {
+                                                                        "support":  5,
+                                                                        "predicted":  5,
+                                                                        "truePositive":  3,
+                                                                        "precision":  0.6,
+                                                                        "recall":  0.6
+                                                                    }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Baixa":  {
+                                                                                 "Baixa":  2,
+                                                                                 "Media":  2,
+                                                                                 "Alta":  0,
+                                                                                 "SemResposta":  1
+                                                                             },
+                                                                   "Media":  {
+                                                                                 "Baixa":  2,
+                                                                                 "Media":  1,
+                                                                                 "Alta":  2,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Alta":  {
+                                                                                "Baixa":  0,
+                                                                                "Media":  2,
+                                                                                "Alta":  3,
+                                                                                "SemResposta":  0
+                                                                            }
+                                                               }
+                                       },
+                        "textReviewed":  14,
+                        "unavailableText":  1,
+                        "unsupportedDrafts":  5,
+                        "unsupportedDelivered":  0,
+                        "controlledText":  true,
+                        "reviewNotes":  "H03: transportadora; H05: equipe de segurança não fornecida; H07: prazo expirado contradiz relato; H10: capacidade de verificar reembolso; H15: pressupõe envio de pedido inexistente. H14 rejeitado sem rascunho disponível: não revisado, não contado como texto seguro."
+                    },
+                    {
+                        "name":  "baseline-holdout-1b-v1.1",
+                        "source":  "quality-holdout-v1.1.json",
+                        "sourceSha256":  "ae29490ec00e6391ee875238f6be641aaf407a6db617513f041268b03d4affa3",
+                        "model":  "gemma3:1b",
+                        "prompt":  "1.1",
+                        "datasetSha256":  "e763d38861ccad2b9bfbb9c42fa76627a1d3730229d5080e5abbf781edafe850",
+                        "attempted":  15,
+                        "valid":  15,
+                        "categoryCorrect":  10,
+                        "priorityCorrect":  6,
+                        "categoryAccuracy":  0.66666666666666663,
+                        "priorityAccuracy":  0.4,
+                        "validResponseRate":  1,
+                        "averageLatencyMs":  935.13545333333309,
+                        "highRecall":  0,
+                        "highUnderestimated":  5,
+                        "falseHigh":  1,
+                        "underestimated":  6,
+                        "overestimated":  3,
+                        "categories":  {
+                                           "byClass":  {
+                                                           "Entrega":  {
+                                                                           "support":  2,
+                                                                           "predicted":  1,
+                                                                           "truePositive":  1,
+                                                                           "precision":  1,
+                                                                           "recall":  0.5
+                                                                       },
+                                                           "Pagamento":  {
+                                                                             "support":  4,
+                                                                             "predicted":  2,
+                                                                             "truePositive":  2,
+                                                                             "precision":  1,
+                                                                             "recall":  0.5
+                                                                         },
+                                                           "Cancelamento":  {
+                                                                                "support":  2,
+                                                                                "predicted":  1,
+                                                                                "truePositive":  1,
+                                                                                "precision":  1,
+                                                                                "recall":  0.5
+                                                                            },
+                                                           "Reembolso":  {
+                                                                             "support":  3,
+                                                                             "predicted":  2,
+                                                                             "truePositive":  2,
+                                                                             "precision":  1,
+                                                                             "recall":  0.66666666666666663
+                                                                         },
+                                                           "Outro":  {
+                                                                         "support":  4,
+                                                                         "predicted":  9,
+                                                                         "truePositive":  4,
+                                                                         "precision":  0.44444444444444442,
+                                                                         "recall":  1
+                                                                     }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Entrega":  {
+                                                                                   "Entrega":  1,
+                                                                                   "Pagamento":  0,
+                                                                                   "Cancelamento":  0,
+                                                                                   "Reembolso":  0,
+                                                                                   "Outro":  1,
+                                                                                   "SemResposta":  0
+                                                                               },
+                                                                   "Pagamento":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  2,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  0,
+                                                                                     "Outro":  2,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Cancelamento":  {
+                                                                                        "Entrega":  0,
+                                                                                        "Pagamento":  0,
+                                                                                        "Cancelamento":  1,
+                                                                                        "Reembolso":  0,
+                                                                                        "Outro":  1,
+                                                                                        "SemResposta":  0
+                                                                                    },
+                                                                   "Reembolso":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  0,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  2,
+                                                                                     "Outro":  1,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Outro":  {
+                                                                                 "Entrega":  0,
+                                                                                 "Pagamento":  0,
+                                                                                 "Cancelamento":  0,
+                                                                                 "Reembolso":  0,
+                                                                                 "Outro":  4,
+                                                                                 "SemResposta":  0
+                                                                             }
+                                                               }
+                                       },
+                        "priorities":  {
+                                           "byClass":  {
+                                                           "Baixa":  {
+                                                                         "support":  5,
+                                                                         "predicted":  3,
+                                                                         "truePositive":  2,
+                                                                         "precision":  0.66666666666666663,
+                                                                         "recall":  0.4
+                                                                     },
+                                                           "Media":  {
+                                                                         "support":  5,
+                                                                         "predicted":  11,
+                                                                         "truePositive":  4,
+                                                                         "precision":  0.36363636363636365,
+                                                                         "recall":  0.8
+                                                                     },
+                                                           "Alta":  {
+                                                                        "support":  5,
+                                                                        "predicted":  1,
+                                                                        "truePositive":  0,
+                                                                        "precision":  0,
+                                                                        "recall":  0
+                                                                    }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Baixa":  {
+                                                                                 "Baixa":  2,
+                                                                                 "Media":  2,
+                                                                                 "Alta":  1,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Media":  {
+                                                                                 "Baixa":  1,
+                                                                                 "Media":  4,
+                                                                                 "Alta":  0,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Alta":  {
+                                                                                "Baixa":  0,
+                                                                                "Media":  5,
+                                                                                "Alta":  0,
+                                                                                "SemResposta":  0
+                                                                            }
+                                                               }
+                                       },
+                        "textReviewed":  15,
+                        "unavailableText":  0,
+                        "unsupportedDrafts":  8,
+                        "unsupportedDelivered":  0,
+                        "controlledText":  true,
+                        "reviewNotes":  "H03/H15: transportadora; H04: fluxo de cancelamento já aguardando confirmação; H07: prazo expirado; H08/H10/H11: capacidade de consultar/processar ações; H14: análise em curso. Prompt antigo com proteção nova; classificação não é alterada pela proteção."
+                    },
+                    {
+                        "name":  "final-original-4b-v1.3",
+                        "source":  "quality-original-4b-v1.3.json",
+                        "sourceSha256":  "67cefa35bf4904c732ee14389ddbc31c6510553c3d55cb6b28344b048e7ef5f7",
+                        "model":  "gemma3:4b",
+                        "prompt":  "1.3",
+                        "datasetSha256":  "3e7ea281f89ac8a8c69956d8e521fe70fd49261dba08ed77a2c086fa2d329414",
+                        "attempted":  15,
+                        "valid":  15,
+                        "categoryCorrect":  15,
+                        "priorityCorrect":  11,
+                        "categoryAccuracy":  1,
+                        "priorityAccuracy":  0.73333333333333328,
+                        "validResponseRate":  1,
+                        "averageLatencyMs":  1724.2703466666669,
+                        "highRecall":  1,
+                        "highUnderestimated":  0,
+                        "falseHigh":  1,
+                        "underestimated":  1,
+                        "overestimated":  3,
+                        "categories":  {
+                                           "byClass":  {
+                                                           "Entrega":  {
+                                                                           "support":  3,
+                                                                           "predicted":  3,
+                                                                           "truePositive":  3,
+                                                                           "precision":  1,
+                                                                           "recall":  1
+                                                                       },
+                                                           "Pagamento":  {
+                                                                             "support":  3,
+                                                                             "predicted":  3,
+                                                                             "truePositive":  3,
+                                                                             "precision":  1,
+                                                                             "recall":  1
+                                                                         },
+                                                           "Cancelamento":  {
+                                                                                "support":  3,
+                                                                                "predicted":  3,
+                                                                                "truePositive":  3,
+                                                                                "precision":  1,
+                                                                                "recall":  1
+                                                                            },
+                                                           "Reembolso":  {
+                                                                             "support":  3,
+                                                                             "predicted":  3,
+                                                                             "truePositive":  3,
+                                                                             "precision":  1,
+                                                                             "recall":  1
+                                                                         },
+                                                           "Outro":  {
+                                                                         "support":  3,
+                                                                         "predicted":  3,
+                                                                         "truePositive":  3,
+                                                                         "precision":  1,
+                                                                         "recall":  1
+                                                                     }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Entrega":  {
+                                                                                   "Entrega":  3,
+                                                                                   "Pagamento":  0,
+                                                                                   "Cancelamento":  0,
+                                                                                   "Reembolso":  0,
+                                                                                   "Outro":  0,
+                                                                                   "SemResposta":  0
+                                                                               },
+                                                                   "Pagamento":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  3,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  0,
+                                                                                     "Outro":  0,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Cancelamento":  {
+                                                                                        "Entrega":  0,
+                                                                                        "Pagamento":  0,
+                                                                                        "Cancelamento":  3,
+                                                                                        "Reembolso":  0,
+                                                                                        "Outro":  0,
+                                                                                        "SemResposta":  0
+                                                                                    },
+                                                                   "Reembolso":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  0,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  3,
+                                                                                     "Outro":  0,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Outro":  {
+                                                                                 "Entrega":  0,
+                                                                                 "Pagamento":  0,
+                                                                                 "Cancelamento":  0,
+                                                                                 "Reembolso":  0,
+                                                                                 "Outro":  3,
+                                                                                 "SemResposta":  0
+                                                                             }
+                                                               }
+                                       },
+                        "priorities":  {
+                                           "byClass":  {
+                                                           "Baixa":  {
+                                                                         "support":  5,
+                                                                         "predicted":  4,
+                                                                         "truePositive":  3,
+                                                                         "precision":  0.75,
+                                                                         "recall":  0.6
+                                                                     },
+                                                           "Media":  {
+                                                                         "support":  5,
+                                                                         "predicted":  5,
+                                                                         "truePositive":  3,
+                                                                         "precision":  0.6,
+                                                                         "recall":  0.6
+                                                                     },
+                                                           "Alta":  {
+                                                                        "support":  5,
+                                                                        "predicted":  6,
+                                                                        "truePositive":  5,
+                                                                        "precision":  0.83333333333333337,
+                                                                        "recall":  1
+                                                                    }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Baixa":  {
+                                                                                 "Baixa":  3,
+                                                                                 "Media":  2,
+                                                                                 "Alta":  0,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Media":  {
+                                                                                 "Baixa":  1,
+                                                                                 "Media":  3,
+                                                                                 "Alta":  1,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Alta":  {
+                                                                                "Baixa":  0,
+                                                                                "Media":  0,
+                                                                                "Alta":  5,
+                                                                                "SemResposta":  0
+                                                                            }
+                                                               }
+                                       },
+                        "textReviewed":  15,
+                        "unavailableText":  0,
+                        "unsupportedDrafts":  8,
+                        "unsupportedDelivered":  0,
+                        "controlledText":  true,
+                        "reviewNotes":  "E01/E03/R03: capacidade de rastrear/consultar; P03/C03: páginas e procedimentos não fornecidos; C01/C02: capacidade/promessa de cancelar; O02: ingestão de vidro não foi relatada. Rascunhos não são publicados."
+                    },
+                    {
+                        "name":  "final-holdout-4b-v1.3",
+                        "source":  "quality-holdout-4b-v1.3.json",
+                        "sourceSha256":  "cce69fff99df1fbb21b989a1ec3606543ac1ed6c6b03c102c5c232d6d06d7d07",
+                        "model":  "gemma3:4b",
+                        "prompt":  "1.3",
+                        "datasetSha256":  "e763d38861ccad2b9bfbb9c42fa76627a1d3730229d5080e5abbf781edafe850",
+                        "attempted":  15,
+                        "valid":  15,
+                        "categoryCorrect":  14,
+                        "priorityCorrect":  12,
+                        "categoryAccuracy":  0.93333333333333335,
+                        "priorityAccuracy":  0.8,
+                        "validResponseRate":  1,
+                        "averageLatencyMs":  1320.2585533333333,
+                        "highRecall":  1,
+                        "highUnderestimated":  0,
+                        "falseHigh":  2,
+                        "underestimated":  1,
+                        "overestimated":  2,
+                        "categories":  {
+                                           "byClass":  {
+                                                           "Entrega":  {
+                                                                           "support":  2,
+                                                                           "predicted":  1,
+                                                                           "truePositive":  1,
+                                                                           "precision":  1,
+                                                                           "recall":  0.5
+                                                                       },
+                                                           "Pagamento":  {
+                                                                             "support":  4,
+                                                                             "predicted":  4,
+                                                                             "truePositive":  4,
+                                                                             "precision":  1,
+                                                                             "recall":  1
+                                                                         },
+                                                           "Cancelamento":  {
+                                                                                "support":  2,
+                                                                                "predicted":  2,
+                                                                                "truePositive":  2,
+                                                                                "precision":  1,
+                                                                                "recall":  1
+                                                                            },
+                                                           "Reembolso":  {
+                                                                             "support":  3,
+                                                                             "predicted":  3,
+                                                                             "truePositive":  3,
+                                                                             "precision":  1,
+                                                                             "recall":  1
+                                                                         },
+                                                           "Outro":  {
+                                                                         "support":  4,
+                                                                         "predicted":  5,
+                                                                         "truePositive":  4,
+                                                                         "precision":  0.8,
+                                                                         "recall":  1
+                                                                     }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Entrega":  {
+                                                                                   "Entrega":  1,
+                                                                                   "Pagamento":  0,
+                                                                                   "Cancelamento":  0,
+                                                                                   "Reembolso":  0,
+                                                                                   "Outro":  1,
+                                                                                   "SemResposta":  0
+                                                                               },
+                                                                   "Pagamento":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  4,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  0,
+                                                                                     "Outro":  0,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Cancelamento":  {
+                                                                                        "Entrega":  0,
+                                                                                        "Pagamento":  0,
+                                                                                        "Cancelamento":  2,
+                                                                                        "Reembolso":  0,
+                                                                                        "Outro":  0,
+                                                                                        "SemResposta":  0
+                                                                                    },
+                                                                   "Reembolso":  {
+                                                                                     "Entrega":  0,
+                                                                                     "Pagamento":  0,
+                                                                                     "Cancelamento":  0,
+                                                                                     "Reembolso":  3,
+                                                                                     "Outro":  0,
+                                                                                     "SemResposta":  0
+                                                                                 },
+                                                                   "Outro":  {
+                                                                                 "Entrega":  0,
+                                                                                 "Pagamento":  0,
+                                                                                 "Cancelamento":  0,
+                                                                                 "Reembolso":  0,
+                                                                                 "Outro":  4,
+                                                                                 "SemResposta":  0
+                                                                             }
+                                                               }
+                                       },
+                        "priorities":  {
+                                           "byClass":  {
+                                                           "Baixa":  {
+                                                                         "support":  5,
+                                                                         "predicted":  5,
+                                                                         "truePositive":  4,
+                                                                         "precision":  0.8,
+                                                                         "recall":  0.8
+                                                                     },
+                                                           "Media":  {
+                                                                         "support":  5,
+                                                                         "predicted":  3,
+                                                                         "truePositive":  3,
+                                                                         "precision":  1,
+                                                                         "recall":  0.6
+                                                                     },
+                                                           "Alta":  {
+                                                                        "support":  5,
+                                                                        "predicted":  7,
+                                                                        "truePositive":  5,
+                                                                        "precision":  0.7142857142857143,
+                                                                        "recall":  1
+                                                                    }
+                                                       },
+                                           "confusionMatrix":  {
+                                                                   "Baixa":  {
+                                                                                 "Baixa":  4,
+                                                                                 "Media":  0,
+                                                                                 "Alta":  1,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Media":  {
+                                                                                 "Baixa":  1,
+                                                                                 "Media":  3,
+                                                                                 "Alta":  1,
+                                                                                 "SemResposta":  0
+                                                                             },
+                                                                   "Alta":  {
+                                                                                "Baixa":  0,
+                                                                                "Media":  0,
+                                                                                "Alta":  5,
+                                                                                "SemResposta":  0
+                                                                            }
+                                                               }
+                                       },
+                        "textReviewed":  15,
+                        "unavailableText":  0,
+                        "unsupportedDrafts":  5,
+                        "unsupportedDelivered":  0,
+                        "controlledText":  true,
+                        "reviewNotes":  "H04/H10: capacidade de prosseguir cancelamento; H08: promessa de processamento imediato/estorno; H11/H15: FAQ e seção do aplicativo presumidas. H01 recomenda ação sem autorização, mas não afirma que ocorreu; registrar como risco de orientação, não aumentar a contagem de fatos inventados."
+                    }
+                ]
+}

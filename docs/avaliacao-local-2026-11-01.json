@@ -1,0 +1,247 @@
+{
+  "status": "executado",
+  "reason": null,
+  "startedAtUtc": "2026-11-01T23:29:03.308226+00:00",
+  "completedAtUtc": "2026-11-01T23:29:17.4032806+00:00",
+  "provider": "Ollama",
+  "modelConfigured": "gemma3:1b",
+  "reasoningEffort": "n\u00E3o aplic\u00E1vel; temperatura 0, seed 42",
+  "timeoutSeconds": 120,
+  "maxOutputTokens": 1000,
+  "contextTokens": 8192,
+  "promptVersion": "1.1",
+  "promptSha256": "ca1ab6948efe353af31fd911b95f53750b047ae61d58b98a3d88a50f6cccca42",
+  "schemaSha256": "2e94642710cb29f14ee696b5a2abc6a60c171b0f4a31f743e3c9be2c8e8c4ecc",
+  "datasetSha256": "3e7ea281f89ac8a8c69956d8e521fe70fd49261dba08ed77a2c086fa2d329414",
+  "datasetSize": 15,
+  "metrics": {
+    "attempted": 15,
+    "valid": 15,
+    "categoryCorrect": 12,
+    "priorityCorrect": 6,
+    "categoryAccuracy": 0.8,
+    "priorityAccuracy": 0.4,
+    "validResponseRate": 1,
+    "averageLatencyMs": 938.3311333333334,
+    "failureCount": 0
+  },
+  "cases": [
+    {
+      "id": "E01",
+      "expectedCategory": "Entrega",
+      "expectedPriority": "Media",
+      "analysis": {
+        "categoria": "Entrega",
+        "prioridade": "Media",
+        "justificativa": "O pedido n\u00E3o foi recebido, o que indica um problema na entrega.",
+        "sugestaoResposta": "Verifique o status do seu pedido e entre em contato com a transportadora para rastreamento.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 776.7324
+    },
+    {
+      "id": "E02",
+      "expectedCategory": "Entrega",
+      "expectedPriority": "Alta",
+      "analysis": {
+        "categoria": "Entrega",
+        "prioridade": "Media",
+        "justificativa": "Pedido de entrega atrasada e falta de comunica\u00E7\u00E3o do entregador. Solicita\u00E7\u00E3o de assist\u00EAncia urgente para resolver o problema.",
+        "sugestaoResposta": "Verificar o status do pedido e entrar em contato com a transportadora para obter informa\u00E7\u00F5es sobre o entregador e o atraso.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 852.7015
+    },
+    {
+      "id": "E03",
+      "expectedCategory": "Entrega",
+      "expectedPriority": "Baixa",
+      "analysis": {
+        "categoria": "Entrega",
+        "prioridade": "Media",
+        "justificativa": "A mensagem indica que o usu\u00E1rio deseja saber o status de um pedido. A solicita\u00E7\u00E3o \u00E9 para obter informa\u00E7\u00F5es sobre o rastreamento do pedido, o que \u00E9 uma a\u00E7\u00E3o comum em sistemas de entrega.",
+        "sugestaoResposta": "Para acompanhar a entrega do seu pr\u00F3ximo pedido, voc\u00EA pode acessar o site ou aplicativo da empresa respons\u00E1vel pelo envio. L\u00E1, voc\u00EA encontrar\u00E1 o c\u00F3digo de rastreamento e poder\u00E1 acompanhar o progresso do seu pedido em tempo real.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1119.2306
+    },
+    {
+      "id": "P01",
+      "expectedCategory": "Pagamento",
+      "expectedPriority": "Media",
+      "analysis": {
+        "categoria": "Pagamento",
+        "prioridade": "Media",
+        "justificativa": "O cart\u00E3o foi recusado ao tentar pagar o pedido, indicando um problema com a transa\u00E7\u00E3o. \u00C9 necess\u00E1rio investigar a causa da recusa.",
+        "sugestaoResposta": "Verifique se h\u00E1 limite de cr\u00E9dito, se o cart\u00E3o est\u00E1 bloqueado ou se h\u00E1 alguma pend\u00EAncia na fatura. Entre em contato com o seu banco para obter mais informa\u00E7\u00F5es sobre o problema.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 927.0383
+    },
+    {
+      "id": "P02",
+      "expectedCategory": "Pagamento",
+      "expectedPriority": "Alta",
+      "analysis": {
+        "categoria": "Pagamento",
+        "prioridade": "Media",
+        "justificativa": "Duas cobran\u00E7as do mesmo pedido no cart\u00E3o indicam um poss\u00EDvel erro de processamento. \u00C9 importante verificar a transa\u00E7\u00E3o para identificar a causa e tomar as medidas corretivas.",
+        "sugestaoResposta": "Verifique o hist\u00F3rico do cart\u00E3o e o pedido para identificar a transa\u00E7\u00E3o duplicada.  Entre em contato com o banco ou empresa respons\u00E1vel pelo cart\u00E3o para resolver o problema.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 973.4562
+    },
+    {
+      "id": "P03",
+      "expectedCategory": "Pagamento",
+      "expectedPriority": "Baixa",
+      "analysis": {
+        "categoria": "Pagamento",
+        "prioridade": "Media",
+        "justificativa": "Solicita\u00E7\u00E3o de informa\u00E7\u00F5es sobre m\u00E9todos de pagamento. A mensagem n\u00E3o fornece detalhes sobre as op\u00E7\u00F5es aceitas.",
+        "sugestaoResposta": "Atualmente aceitamos cart\u00E3o de cr\u00E9dito (Visa, Mastercard), boleto banc\u00E1rio e transfer\u00EAncia banc\u00E1ria.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 994.3754
+    },
+    {
+      "id": "C01",
+      "expectedCategory": "Cancelamento",
+      "expectedPriority": "Media",
+      "analysis": {
+        "categoria": "Cancelamento",
+        "prioridade": "Baixa",
+        "justificativa": "O usu\u00E1rio solicita o cancelamento de um pedido que foi feito acidentalmente. A mensagem indica um pedido que foi feito em erro.",
+        "sugestaoResposta": "Para processar o cancelamento, por favor, informe o n\u00FAmero do pedido e o motivo do cancelamento.  Assim, poderei iniciar o processo de cancelamento.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 991.0644
+    },
+    {
+      "id": "C02",
+      "expectedCategory": "Cancelamento",
+      "expectedPriority": "Alta",
+      "analysis": {
+        "categoria": "Cancelamento",
+        "prioridade": "Alta",
+        "justificativa": "O cliente solicita o cancelamento imediato do pedido, o que indica um risco \u00E0 sa\u00FAde/seguran\u00E7a ou fraude. A urg\u00EAncia \u00E9 alta devido ao in\u00EDcio do preparo do restaurante.",
+        "sugestaoResposta": "Aguarde o restaurante finalizar o preparo antes de prosseguir com o cancelamento.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 901.881
+    },
+    {
+      "id": "C03",
+      "expectedCategory": "Cancelamento",
+      "expectedPriority": "Baixa",
+      "analysis": {
+        "categoria": "Cancelamento",
+        "prioridade": "Media",
+        "justificativa": "O usu\u00E1rio solicita o cancelamento de um pedido. A mensagem indica que o pedido foi solicitado e o processo de cancelamento est\u00E1 sendo realizado.",
+        "sugestaoResposta": "Para processar o cancelamento, precisamos verificar o motivo do pedido e confirmar a sua solicita\u00E7\u00E3o.  Ap\u00F3s a an\u00E1lise, o pedido ser\u00E1 cancelado e o reembolso ser\u00E1 processado conforme as pol\u00EDticas da empresa.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 907.7319
+    },
+    {
+      "id": "R01",
+      "expectedCategory": "Reembolso",
+      "expectedPriority": "Media",
+      "analysis": {
+        "categoria": "Reembolso",
+        "prioridade": "Media",
+        "justificativa": "O item foi recebido incorretamente e o cliente solicita a devolu\u00E7\u00E3o do valor. A solicita\u00E7\u00E3o \u00E9 um pedido de reembolso.",
+        "sugestaoResposta": "Por favor, anexe fotos do item errado e o item recebido para an\u00E1lise.  Vamos verificar o processo de devolu\u00E7\u00E3o.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 896.6802
+    },
+    {
+      "id": "R02",
+      "expectedCategory": "Reembolso",
+      "expectedPriority": "Alta",
+      "analysis": {
+        "categoria": "Outro",
+        "prioridade": "Media",
+        "justificativa": "O prazo de reembolso expirou e o dinheiro n\u00E3o foi devolvido, indicando um problema urgente. \u00C9 necess\u00E1rio investigar a situa\u00E7\u00E3o e garantir o reembolso do cliente.",
+        "sugestaoResposta": "Verifique o status do seu pedido e entre em contato com o nosso suporte para solicitar o reembolso.  Solicite o n\u00FAmero do pedido para agilizar a an\u00E1lise.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1073.1977
+    },
+    {
+      "id": "R03",
+      "expectedCategory": "Reembolso",
+      "expectedPriority": "Baixa",
+      "analysis": {
+        "categoria": "Outro",
+        "prioridade": "Baixa",
+        "justificativa": "N\u00E3o foi fornecido nenhum detalhe na mensagem. Solicito esclarecimento.",
+        "sugestaoResposta": "N\u00E3o possuo informa\u00E7\u00F5es sobre prazos de reembolso. \u00C9 necess\u00E1rio verificar o caso e informar o cliente.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 806.6237
+    },
+    {
+      "id": "O01",
+      "expectedCategory": "Outro",
+      "expectedPriority": "Media",
+      "analysis": {
+        "categoria": "Entrega",
+        "prioridade": "Media",
+        "justificativa": "A mensagem indica que o usu\u00E1rio n\u00E3o consegue alterar o endere\u00E7o no aplicativo, o que pode indicar um problema t\u00E9cnico ou de acesso. \u00C9 importante verificar se h\u00E1 alguma mensagem de erro ou instru\u00E7\u00E3o espec\u00EDfica sobre como resolver o problema.",
+        "sugestaoResposta": "Por favor, verifique se h\u00E1 alguma mensagem de erro ou instru\u00E7\u00E3o espec\u00EDfica sobre como resolver o problema. Se o problema persistir, entre em contato com o suporte do aplicativo.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 1029.7532
+    },
+    {
+      "id": "O02",
+      "expectedCategory": "Outro",
+      "expectedPriority": "Alta",
+      "analysis": {
+        "categoria": "Outro",
+        "prioridade": "Media",
+        "justificativa": "A mensagem indica um problema grave com a comida, que veio com um peda\u00E7o de vidro e causou ferimento. \u00C9 necess\u00E1rio investigar e avaliar a situa\u00E7\u00E3o com cautela.",
+        "sugestaoResposta": "Estamos investigando o ocorrido. Por favor, nos informe o que aconteceu para que possamos dar suporte.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 915.9901
+    },
+    {
+      "id": "O03",
+      "expectedCategory": "Outro",
+      "expectedPriority": "Baixa",
+      "analysis": {
+        "categoria": "Outro",
+        "prioridade": "Media",
+        "justificativa": "A mensagem apresenta uma experi\u00EAncia positiva e solicita um elogio. A solicita\u00E7\u00E3o de feedback \u00E9 clara e demonstra um desejo de melhorar o atendimento.",
+        "sugestaoResposta": "Agradecemos o feedback e estamos comprometidos em oferecer um atendimento excepcional. Sua avalia\u00E7\u00E3o \u00E9 muito importante para n\u00F3s.",
+        "requerRevisaoHumana": true
+      },
+      "errorCode": null,
+      "latencyMs": 908.5104
+    }
+  ],
+  "limitations": [
+    "15 exemplos sint\u00E9ticos, rotulados pelo autor; n\u00E3o representam tr\u00E1fego real nem valida\u00E7\u00E3o independente.",
+    "Lat\u00EAncia mede o servi\u00E7o de an\u00E1lise (rede, provedor e valida\u00E7\u00E3o); n\u00E3o mede o endpoint HTTP nem trabalho humano.",
+    "Falhas contam no denominador das acur\u00E1cias. Validade estrutural n\u00E3o garante corre\u00E7\u00E3o sem\u00E2ntica.",
+    "Sugest\u00F5es precisam de revis\u00E3o humana. Economia de tempo, custo real e impacto operacional n\u00E3o foram medidos.",
+    "Modelo configurado pode ser um alias mut\u00E1vel; resultados podem variar entre execu\u00E7\u00F5es."
+  ]
+}

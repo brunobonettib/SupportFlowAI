@@ -1,0 +1,38 @@
+﻿[
+    {
+        "expected":  400,
+        "case":  "empty",
+        "actual":  400,
+        "passed":  true
+    },
+    {
+        "expected":  400,
+        "case":  "duplicate",
+        "actual":  400,
+        "passed":  true
+    },
+    {
+        "expected":  400,
+        "case":  "malformed",
+        "actual":  400,
+        "passed":  true
+    },
+    {
+        "expected":  400,
+        "case":  "too_long",
+        "actual":  400,
+        "passed":  true
+    },
+    {
+        "expected":  413,
+        "case":  "body_limit",
+        "actual":  413,
+        "passed":  true
+    },
+    {
+        "expected":  200,
+        "case":  "openapi",
+        "actual":  200,
+        "passed":  true
+    }
+]

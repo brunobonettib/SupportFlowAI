@@ -1,0 +1,7 @@
+﻿{
+    "frozenAtUtc":  "2026-11-02T02:25:51.8237319+00:00",
+    "purpose":  "Rótulos definidos antes da inferência; não usados como exemplos do prompt.",
+    "originalSha256":  "3e7ea281f89ac8a8c69956d8e521fe70fd49261dba08ed77a2c086fa2d329414",
+    "holdoutSha256":  "e763d38861ccad2b9bfbb9c42fa76627a1d3730229d5080e5abbf781edafe850",
+    "baselineReportSha256":  "43e6bb2614ccb9b1f389fb3d3580b40396857f1b98b6b1308915df568e6a8121"
+}
