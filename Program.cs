@@ -98,6 +98,9 @@ else
     });
 }
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.MapPost("/api/tickets/analyze", async (AnalyzeTicketRequest? request, ITicketAnalyzer analyzer,
     HttpContext context, ILogger<Program> logger, CancellationToken cancellationToken) =>
 {

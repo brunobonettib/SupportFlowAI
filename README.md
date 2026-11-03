@@ -140,6 +140,8 @@ dotnet run --project SupportFlowAI.csproj --no-build --launch-profile http
 
 API: `http://localhost:5143`. OpenAPI: `http://localhost:5143/openapi/v1.json`. Ctrl+C encerra o servidor do terminal. O primeiro carregamento do modelo pode levar mais tempo.
 
+**Interface web:** acesse `http://localhost:5143/` no navegador com a aplicação iniciada. Insira uma mensagem fictícia ou escolha um dos três exemplos e clique em **Analisar solicitação**. A interface em `wwwroot/` é servida pela própria API, sem instalação ou build de frontend. Ela usa o provedor selecionado no servidor; para a demonstração local, mantenha `Analysis__Provider=Ollama` e o Ollama ativo.
+
 Alternativa com os scripts existentes, a partir da raiz:
 
 ```powershell
@@ -267,7 +269,7 @@ São **apenas 15 exemplos sintéticos por conjunto**, preparados com apoio do Co
 - O modelo ainda erra categoria e prioridade, inclusive sob prompt injection. Não há confiança calibrada nem garantia de generalização.
 - Rascunhos livres continham informações não sustentadas. Textos públicos controlados no caminho local reduzem esse risco, com perda de personalização; isso não significa ausência de alucinações do modelo.
 - Revisão humana permanece necessária. Não há consulta a pedidos, confirmação de ações, cancelamento, reembolso ou envio automático.
-- Não há autenticação, rate limiting, persistência, frontend, RAG, controle agregado de orçamento ou deploy. Use dados fictícios e mantenha o MVP em loopback.
+- Não há autenticação, rate limiting, persistência, RAG, controle agregado de orçamento ou deploy. Use dados fictícios e mantenha o MVP em loopback.
 - Fora de Development, HTTP é rejeitado. Hospedagem futura exigiria configuração adequada de TLS e infraestrutura.
 - OpenAI não teve inferência bem-sucedida validada ao vivo; limites por chamada não limitam gasto acumulado.
 - Auditoria NuGet cobre avisos conhecidos de dependências .NET na data da consulta; não certifica o runtime Ollama, o modelo ou todo o sistema.
